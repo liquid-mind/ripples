@@ -1,1 +1,4 @@
 -Using collections instead of arrays (as in reflection); rationale is that collections are easier to work with; optimizing for ease of use over effeciency.
+
+Questions:
+-How to deal with generics (e.g., Class< T >, etc.)?
