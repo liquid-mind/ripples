@@ -1,6 +1,6 @@
 package ch.liquidmind.ripples;
 
-public interface Type extends NamedElement
+public interface Type extends Element
 {
 
 }

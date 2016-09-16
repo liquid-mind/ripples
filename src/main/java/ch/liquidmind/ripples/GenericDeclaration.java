@@ -1,6 +1,6 @@
 package ch.liquidmind.ripples;
 
-public interface GenericDeclaration extends GenericType
+public interface GenericDeclaration extends Namespace
 {
 
 }

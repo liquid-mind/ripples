@@ -1,6 +1,6 @@
 package ch.liquidmind.ripples;
 
-public interface Class extends SpecificType
+public interface Class extends Classifier
 {
 	
 }
