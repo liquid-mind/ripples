@@ -4,5 +4,4 @@ import ch.liquidmind.ripples.common.Element;
 
 public interface AnnotationInstance extends Element
 {
-
 }
