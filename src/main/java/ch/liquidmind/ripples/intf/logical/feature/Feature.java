@@ -11,6 +11,8 @@ public interface Feature extends NamedElement, TypedElement, AnnotatableElement,
 {
 	@Property( redefines = "namespace" )
 	public Classifier getParentClassifier();
+	public void setParentClassifier( Classifier parentClassifier );
 	
 	public Property getReferencingProperty();
+	public void getReferencingProperty( Property referencingProperty );
 }

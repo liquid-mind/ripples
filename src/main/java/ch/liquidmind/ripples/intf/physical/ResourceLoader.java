@@ -10,6 +10,7 @@ public interface ResourceLoader extends Namespace
 {
 	@Property( redefines = "namespace" )
 	public Model getParentModel();
+	public void setParentModel( Model parentModel );
 	
 	@Property( redefines = "members" )
 	public Set< Resource > getResources();

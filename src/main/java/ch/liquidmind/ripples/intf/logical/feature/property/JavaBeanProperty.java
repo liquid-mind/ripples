@@ -13,7 +13,9 @@ public interface JavaBeanProperty extends Property, GenericDeclaration, Overrida
 	
 	@ch.liquidmind.inflection.association.annotations.Property( subsets = "methods" )
 	public VirtualMethod getReadMethod();
+	public void setReadMethod( VirtualMethod readMethod );
 
 	@ch.liquidmind.inflection.association.annotations.Property( subsets = "methods" )
 	public VirtualMethod getWriteMethod();
+	public void setWriteMethod( VirtualMethod writeMethod );
 }

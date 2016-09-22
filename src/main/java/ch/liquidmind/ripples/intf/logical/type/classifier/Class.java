@@ -8,4 +8,5 @@ public interface Class extends Classifier
 {
 	public Set< Type > getRealizedInterfaces();
 	public Type getBaseClass();
+	public void setBaseClass( Type baseClass );
 }

@@ -4,5 +4,4 @@ import ch.liquidmind.ripples.intf.common.Element;
 
 public interface Type extends Element
 {
-
 }

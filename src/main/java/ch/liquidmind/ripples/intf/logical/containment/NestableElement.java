@@ -7,4 +7,5 @@ public interface NestableElement extends PackagableElement
 {
 	@Property( subsets = "namespace" )
 	public Classifier getParentClassifier();
+	public void setParentClassifier( Classifier parentClassifier );
 }

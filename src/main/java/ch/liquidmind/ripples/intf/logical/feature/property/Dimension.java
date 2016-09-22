@@ -6,4 +6,5 @@ public interface Dimension extends TypedElement
 {
 	@ch.liquidmind.inflection.association.annotations.Property( redefines = "parentElement" )
 	public Property getParentProperty();
+	public void setParentProperty( Property parentProperty );
 }

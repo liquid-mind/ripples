@@ -9,9 +9,12 @@ public interface Resource extends Namespace, OccludableElement
 {
 	@Property( subsets = "namespace" )
 	public ResourceLoader getParentLoader();
+	public void setParentLoader( ResourceLoader parentLoader );
 
 	@Property( subsets = "namespace" )
 	public Module getParentModule();
+	public void setParentModule( Module parentModule );
 	
 	public Classifier getClassifier();
+	public void setClassifier( Classifier classifier );
 }

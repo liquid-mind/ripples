@@ -8,4 +8,5 @@ public interface Field extends StructuralFeature, OccludableElement
 {
 	@Property( redefines = "referencingProperty" )
 	public FieldProperty getReferencingFieldProperty();
+	public void setReferencingFieldProperty( FieldProperty referencingFieldProperty );
 }

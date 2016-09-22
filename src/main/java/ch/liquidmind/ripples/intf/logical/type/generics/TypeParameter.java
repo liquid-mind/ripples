@@ -10,6 +10,7 @@ public interface TypeParameter extends GenericType, NamedElement
 {
 	@Property( redefines = "namespace" )
 	public GenericDeclaration getParentDeclaration();
+	public void setParentDeclaration( GenericDeclaration parentDeclaration );
 	
 	public Set< Type > getBounds();
 }

@@ -7,4 +7,5 @@ public interface FieldProperty extends Property, OccludableElement
 {
 	@ch.liquidmind.inflection.association.annotations.Property( redefines = "features" )
 	public Field getField();
+	public void setField( Field field );
 }

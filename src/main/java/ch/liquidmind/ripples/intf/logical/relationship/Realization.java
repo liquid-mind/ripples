@@ -8,7 +8,9 @@ public interface Realization extends DirectedRelationship
 {
 	@Property( redefines = "sources" )
 	public Class getRealizingClass();
+	public void setRealizingClass( Class realizingClass );
 
 	@Property( redefines = "targets" )
 	public Interface getRealizedInterface();
+	public void getRealizedInterface( Interface realizedInterface );
 }

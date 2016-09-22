@@ -9,4 +9,5 @@ public interface Parameter extends NamedElement, TypedElement, AnnotatableElemen
 {
 	@Property( subsets = "parentElement" )
 	public Operation getParentOperation();
+	public void setParentOperation( Operation parentOperation );
 }

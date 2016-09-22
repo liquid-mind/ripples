@@ -16,6 +16,7 @@ import ch.liquidmind.ripples.intf.physical.Resource;
 public interface Classifier extends Namespace, Type, GenericDeclaration, NestableElement, GeneralizableElement, AnnotatableElement, DocumentableElement
 {
 	public Resource getDefiningResource();
+	public void setDefiningResource( Resource definingResource );
 	
 	@Property( subsets = "packagableElements" )
 	public Set< NestableElement > getNestableElements();

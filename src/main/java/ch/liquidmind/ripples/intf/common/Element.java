@@ -8,7 +8,8 @@ import ch.liquidmind.ripples.intf.logical.type.classifier.Classifier;
 public interface Element
 {
 	public Element getParentElement();
-	public < ChildElementType extends Element > Set< ChildElementType > getChildElements();
-	public < ChildElementType extends Element > Set< ChildElementType > findChildElements( Classifier classifier );
+	public void setParentElement( Element parentElement );
+	public Set< Element > getChildElements();
 	public Set< Relationship > getRelationships();
+	public Set< Element > findChildElements( Classifier classifier );
 }

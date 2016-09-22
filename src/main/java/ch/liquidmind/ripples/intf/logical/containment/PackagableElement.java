@@ -8,7 +8,9 @@ public interface PackagableElement extends NamedElement
 {
 	@Property( subsets = "namespace" )
 	public Model getModel();
+	public void setModel( Model model );
 	
 	@Property( subsets = "namespace" )
 	public Package getParentPackage();
+	public void setParentPackage( Package parentPackage );
 }
