@@ -9,4 +9,6 @@ public interface VirtualMethod extends Operation, OverridableElement
 	@Property( redefines = "referencingProperty" )
 	public JavaBeanProperty getReferencingJavaBeanProperty();
 	public void setReferencingJavaBeanProperty( JavaBeanProperty referencingJavaBeanProperty );
+
+	public Object invoke( Object target, Object ... args );
 }
