@@ -7,19 +7,19 @@ import ch.liquidmind.ripples.intf.logical.containment.Package;
 
 public class PackagableElementImpl extends NamespaceImpl implements PackagableElement
 {
-	private Model model;
+	private Model parentModel;
 	private Package parentPackage;
 
 	@Override
-	public Model getModel()
+	public Model getParentModel()
 	{
-		return model;
+		return parentModel;
 	}
 
 	@Override
-	public void setModel( Model model )
+	public void setParentModel( Model parentModel )
 	{
-		this.model = model;
+		this.parentModel = parentModel;
 	}
 
 	@Override

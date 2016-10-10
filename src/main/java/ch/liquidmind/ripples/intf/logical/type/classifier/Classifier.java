@@ -11,12 +11,12 @@ import ch.liquidmind.ripples.intf.logical.metadata.DocumentableElement;
 import ch.liquidmind.ripples.intf.logical.relationship.GeneralizableElement;
 import ch.liquidmind.ripples.intf.logical.type.Type;
 import ch.liquidmind.ripples.intf.logical.type.generics.GenericDeclaration;
-import ch.liquidmind.ripples.intf.physical.Resource;
+import ch.liquidmind.ripples.intf.physical.ClassifierResource;
 
 public interface Classifier extends Namespace, Type, GenericDeclaration, NestableElement, GeneralizableElement, AnnotatableElement, DocumentableElement
 {
-	public Resource getDefiningResource();
-	public void setDefiningResource( Resource definingResource );
+	public ClassifierResource getDefiningResource();
+	public void setDefiningResource( ClassifierResource definingResource );
 	
 	@Property( subsets = "packagableElements" )
 	public Set< NestableElement > getNestableElements();

@@ -7,8 +7,8 @@ import ch.liquidmind.ripples.intf.common.naming.NamedElement;
 public interface PackagableElement extends NamedElement
 {
 	@Property( subsets = "namespace" )
-	public Model getModel();
-	public void setModel( Model model );
+	public Model getParentModel();
+	public void setParentModel( Model parentModel );
 	
 	@Property( subsets = "namespace" )
 	public Package getParentPackage();

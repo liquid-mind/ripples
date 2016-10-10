@@ -1,19 +1,17 @@
 package ch.liquidmind.ripples.implementation.physical;
 
 import ch.liquidmind.ripples.implementation.common.naming.NamespaceImpl;
+import ch.liquidmind.ripples.intf.common.Model;
 import ch.liquidmind.ripples.intf.common.naming.OccludableElement;
-import ch.liquidmind.ripples.intf.logical.type.classifier.Classifier;
 import ch.liquidmind.ripples.intf.physical.Module;
 import ch.liquidmind.ripples.intf.physical.Resource;
-import ch.liquidmind.ripples.intf.physical.ResourceLoader;
 
 public class ResourceImpl extends NamespaceImpl implements Resource
 {
 	private OccludableElement occludedElement;
 	private OccludableElement occludingElement;
-	private ResourceLoader parentLoader;
+	private Model parentModel ;
 	private Module parentModule;
-	private Classifier classifier;
 
 	@Override
 	public OccludableElement getOccludedElement()
@@ -40,18 +38,6 @@ public class ResourceImpl extends NamespaceImpl implements Resource
 	}
 
 	@Override
-	public ResourceLoader getParentLoader()
-	{
-		return parentLoader;
-	}
-
-	@Override
-	public void setParentLoader( ResourceLoader parentLoader )
-	{
-		this.parentLoader = parentLoader;
-	}
-
-	@Override
 	public Module getParentModule()
 	{
 		return parentModule;
@@ -64,14 +50,14 @@ public class ResourceImpl extends NamespaceImpl implements Resource
 	}
 
 	@Override
-	public Classifier getClassifier()
+	public Model getParentModel()
 	{
-		return classifier;
+		return parentModel;
 	}
 
 	@Override
-	public void setClassifier( Classifier classifier )
+	public void setParentModel( Model parentModel )
 	{
-		this.classifier = classifier;
+		this.parentModel = parentModel;
 	}
 }

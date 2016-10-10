@@ -12,14 +12,14 @@ import ch.liquidmind.ripples.intf.logical.metadata.AnnotationInstance;
 import ch.liquidmind.ripples.intf.logical.metadata.Documentation;
 import ch.liquidmind.ripples.intf.logical.type.classifier.Classifier;
 import ch.liquidmind.ripples.intf.logical.type.generics.TypeParameter;
-import ch.liquidmind.ripples.intf.physical.Resource;
+import ch.liquidmind.ripples.intf.physical.ClassifierResource;
 
 public class ClassifierImpl extends NestableElementImpl implements Classifier
 {
 	private Set< AnnotationInstance > annotationInstances = new HashSet< AnnotationInstance >();
 	private List< TypeParameter > typeParameters = new ArrayList< TypeParameter >();
 	private Documentation documentation;
-	private Resource definingResource;
+	private ClassifierResource definingResource;
 	private Set< NestableElement > nestableElements = new HashSet< NestableElement >();
 	private Set< Feature > features = new HashSet< Feature >();
 
@@ -42,13 +42,13 @@ public class ClassifierImpl extends NestableElementImpl implements Classifier
 	}
 
 	@Override
-	public Resource getDefiningResource()
+	public ClassifierResource getDefiningResource()
 	{
 		return definingResource;
 	}
 
 	@Override
-	public void setDefiningResource( Resource definingResource )
+	public void setDefiningResource( ClassifierResource definingResource )
 	{
 		this.definingResource = definingResource;
 	}
