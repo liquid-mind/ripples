@@ -28,4 +28,10 @@ public class ClassImpl extends ClassifierImpl implements Class
 	{
 		this.baseClass = baseClass;
 	}
+
+	@Override
+	public Object newInstance()
+	{
+		throw new UnsupportedOperationException();
+	}
 }

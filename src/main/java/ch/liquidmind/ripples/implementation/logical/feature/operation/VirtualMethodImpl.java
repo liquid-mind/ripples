@@ -4,7 +4,7 @@ import ch.liquidmind.ripples.intf.common.naming.OverridableElement;
 import ch.liquidmind.ripples.intf.logical.feature.operation.VirtualMethod;
 import ch.liquidmind.ripples.intf.logical.feature.property.JavaBeanProperty;
 
-public class VirtualMethodImpl extends OperationImpl implements VirtualMethod
+public class VirtualMethodImpl extends VirtualOperationImpl implements VirtualMethod
 {
 	private OverridableElement overridingElement;
 	private OverridableElement overridenElement;
@@ -44,11 +44,5 @@ public class VirtualMethodImpl extends OperationImpl implements VirtualMethod
 	public void setReferencingJavaBeanProperty( JavaBeanProperty referencingJavaBeanProperty )
 	{
 		this.referencingJavaBeanProperty = referencingJavaBeanProperty;
-	}
-
-	@Override
-	public Object invoke( Object target, Object... args )
-	{
-		throw new UnsupportedOperationException();
 	}
 }

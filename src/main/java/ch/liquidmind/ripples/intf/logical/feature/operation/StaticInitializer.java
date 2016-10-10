@@ -1,6 +1,5 @@
 package ch.liquidmind.ripples.intf.logical.feature.operation;
 
-public interface StaticInitializer extends Operation
+public interface StaticInitializer extends StaticOperation
 {
-	public void invoke();
 }

@@ -19,4 +19,10 @@ public class ArrayImpl extends NamedElementImpl implements Array
 	{
 		this.componentType = componentType;
 	}
+
+	@Override
+	public Object newInstance()
+	{
+		throw new UnsupportedOperationException();
+	}
 }
